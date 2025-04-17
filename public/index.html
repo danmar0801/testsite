@@ -11,7 +11,8 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
 
 
-<link rel="stylesheet" href="/css/styles.css">
+
+<link rel="stylesheet" href="http://localhost:1313/css/custom.min.57f928686824bddf38305b6b553e7a98482d5738b0d8ab4703e9634bed4753d1.css">
 
 </head>
 <body>
@@ -36,8 +37,10 @@
               Services
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="http://localhost:1313/services/service1">Service 1</a></li>
-              <li><a class="dropdown-item" href="http://localhost:1313/services/service2">Service 2</a></li>
+              <li><a class="dropdown-item" href="http://localhost:1313/services/service1">CSV</a></li>
+              <li><a class="dropdown-item" href="http://localhost:1313/services/service2">CQV</a></li>
+              <li><a class="dropdown-item" href="http://localhost:1313/services/service1">MES</a></li>
+              <li><a class="dropdown-item" href="http://localhost:1313/services/service2">SCADA</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -90,77 +93,138 @@
     
 
 
-<section class="text-center py-5 bg-light">
-  <div class="container">
-    <h1 class="display-4">ViridianTechs</h1>
-    <p class="lead">Empowering Life Science Innovation</p>
-  </div>
+<section class="text-center py-5">
+  <h1 class="display-4 fw-bold">Empowering Innovation Through Technology</h1>
+  <p class="lead text-muted">At Viridian Techs, we offer innovative solutions to drive your business forward.</p>
+  <a href="#services" class="btn btn-success btn-lg mt-3">Explore Services</a>
 </section>
 
 
-<section class="container py-5">
-  <h2>About Us</h2>
-  <p>
-    Our goal is to skyrocket our clients’ success by placing their needs first. We specialize in life science solutions that are compliant, scalable, and tailored to each client’s challenges.
-  </p>
+<section id="about" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">About Viridian Techs</h2>
+      <p class="lead text-center mb-4">
+        At Viridian Techs, our mission is to <strong>empower organizations</strong> through smart, reliable, and compassionate technology solutions. We believe that true innovation flourishes when backed by integrity and genuine care for our clients’ success.
+      </p>
+  
+      <div class="row text-center mb-5">
+        <div class="col-md-3 mb-4">
+          <h5 class="fw-bold">Trustworthy</h5>
+          <p class="text-muted">We build enduring relationships through transparency, honest communication, and proven deliverables.</p>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h5 class="fw-bold">Reliable</h5>
+          <p class="text-muted">From kickoff to launch, our processes and people ensure your projects stay on time and on budget.</p>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h5 class="fw-bold">Professional</h5>
+          <p class="text-muted">Our certified experts adhere to industry best practices and quality standards every step of the way.</p>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h5 class="fw-bold">Innovative</h5>
+          <p class="text-muted">We constantly explore emerging technologies to craft forward‑thinking solutions that keep you ahead of the curve.</p>
+        </div>
+      </div>
+  
+      <div class="text-center mb-4">
+        <p>
+          More than just vendors, we are your dedicated technology partners—listening closely, advising confidently, and delivering solutions that <strong>transform challenges into opportunities</strong>.
+        </p>
+      </div>
+  
+      <div class="text-center">
+        <a href="contact.html" class="btn btn-success btn-lg">Let’s Talk About Your Vision</a>
+      </div>
+    </div>
+  </section>
+
+
+<section id="services" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Specialized Services</h2>
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+  
+        
+        <div class="col d-flex align-items-stretch">
+          <div class="card text-center shadow-sm service-card">
+            <div class="card-header">CSV</div>
+            <div class="card-body d-flex flex-column">
+              <p class="card-text">Expert management of complex projects including facility commissioning, decommissioning, production suite setups, and rigorous method validations.</p>
+              <a href="/services/csv" class="btn btn-outline-success mt-auto">Learn More →</a>
+            </div>
+          </div>
+        </div>
+  
+        
+        <div class="col d-flex align-items-stretch">
+          <div class="card text-center shadow-sm service-card">
+            <div class="card-header">CQV</div>
+            <div class="card-body d-flex flex-column">
+              <p class="card-text">Delivering fully compliant, tailored validation solutions meeting FDA and EMA standards for all your computer systems.</p>
+              <a href="/services/cqv" class="btn btn-outline-success mt-auto">Learn More →</a>
+            </div>
+          </div>
+        </div>
+  
+        
+        <div class="col d-flex align-items-stretch">
+          <div class="card text-center shadow-sm service-card">
+            <div class="card-header">MES</div>
+            <div class="card-body d-flex flex-column">
+              <p class="card-text">Streamlined, automated solutions to effectively manage inventory, product orders, and production protocols.</p>
+              <a href="/services/mes" class="btn btn-outline-success mt-auto">Learn More →</a>
+            </div>
+          </div>
+        </div>
+  
+        
+        <div class="col d-flex align-items-stretch">
+          <div class="card text-center shadow-sm service-card">
+            <div class="card-header">SCADA</div>
+            <div class="card-body d-flex flex-column">
+              <p class="card-text">Robust, centralized monitoring solutions designed to enhance control over your industrial operations and digitalization efforts.</p>
+              <a href="/services/scada" class="btn btn-outline-success mt-auto">Learn More →</a>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+  
+
+
+<section id="why-choose-us" class="py-5">
+  <h2 class="text-center mb-4">Why Choose Viridian Techs?</h2>
+  <ul class="list-unstyled text-center">
+    <li><strong>Customized Solutions:</strong> Tailored specifically to your needs.</li>
+    <li><strong>Expert Team:</strong> Dedicated professionals passionate about technology.</li>
+    <li><strong>Continuous Support:</strong> We're here to help, every step of the way.</li>
+  </ul>
 </section>
 
 
-<section class="container py-5">
-  <h2>Our Services</h2>
-  <div class="row text-center">
-    <div class="col-md-3 mb-4">
-      <div class="card h-100">
-        <div class="card-body">
-          <h5 class="card-title">CSV</h5>
-          <p class="card-text">Validation of computer systems to ensure FDA/EMA compliance.</p>
-        </div>
-      </div>
+<section id="testimonials" class="py-5 ">
+  <h2 class="text-center mb-5">Client Testimonials</h2>
+  <div class="row">
+    <div class="col-md-4">
+      <blockquote class="blockquote text-center">
+        <p>"Their expertise helped us double our productivity. Highly recommend Viridian Techs!"</p>
+        <footer class="blockquote-footer">Jane Doe, <cite>CEO of TechCorp</cite></footer>
+      </blockquote>
     </div>
-    <div class="col-md-3 mb-4">
-      <div class="card h-100">
-        <div class="card-body">
-          <h5 class="card-title">MES</h5>
-          <p class="card-text">Solutions to manage materials, production, and workflow in real time.</p>
-        </div>
-      </div>
+    <div class="col-md-4">
+      <blockquote class="blockquote text-center">
+        <p>"A team that's always there to support us. Viridian Techs is truly reliable."</p>
+        <footer class="blockquote-footer">Jedi Langdon, <cite>CTO at Automation</cite></footer>
+      </blockquote>
     </div>
-    <div class="col-md-3 mb-4">
-      <div class="card h-100">
-        <div class="card-body">
-          <h5 class="card-title">CQV</h5>
-          <p class="card-text">Commissioning, Qualification, and Validation for manufacturing systems.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3 mb-4">
-      <div class="card h-100">
-        <div class="card-body">
-          <h5 class="card-title">SCADA</h5>
-          <p class="card-text">Centralized monitoring and control for industrial processes.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section class="bg-light py-5">
-  <div class="container text-center">
-    <h2>Our Process</h2>
-    <div class="row mt-4">
-      <div class="col-md-4">
-        <h4>1. Discover</h4>
-        <p>We learn your goals and uncover the real obstacles in your way.</p>
-      </div>
-      <div class="col-md-4">
-        <h4>2. Design</h4>
-        <p>We build a roadmap, align the team, and move forward together.</p>
-      </div>
-      <div class="col-md-4">
-        <h4>3. Resolve</h4>
-        <p>We implement solutions that stick and drive lasting impact.</p>
-      </div>
+    <div class="col-md-4">
+      <blockquote class="blockquote text-center">
+        <p>"Innovative solutions and excellent communication. We trust Viridian Techs completely."</p>
+        <footer class="blockquote-footer">Linda Park, <cite>Founder of CloudMasters</cite></footer>
+      </blockquote>
     </div>
   </div>
 </section>
