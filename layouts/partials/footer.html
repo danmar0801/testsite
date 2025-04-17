@@ -1,0 +1,21 @@
+<footer class="bg-dark text-white text-center py-4 mt-5">
+    <p class="mb-0">&copy; {{ now.Year }} ViridianTechs. All rights reserved.</p>
+  </footer>
+  
+  <!-- JS to make dropdown open on hover (desktop only) -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const dropdown = document.querySelector('.nav-item.dropdown');
+      const toggle = dropdown?.querySelector('[data-bs-toggle="dropdown"]');
+  
+      if (dropdown && toggle) {
+        toggle.addEventListener('click', function (e) {
+          if (window.innerWidth >= 768) {
+            e.preventDefault();
+            e.stopImmediatePropagation();
+          }
+        });
+      }
+    });
+</script>
+  
