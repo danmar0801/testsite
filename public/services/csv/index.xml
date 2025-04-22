@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>CSV on My New Hugo Site</title>
-    <link>https://example.org/services/csv/</link>
-    <description>Recent content in CSV on My New Hugo Site</description>
+    <title>CSV on </title>
+    <link>https://danmar0801.github.io/testsite/services/csv/</link>
+    <description>Recent content in CSV on </description>
     <generator>Hugo</generator>
-    <language>en-us</language>
-    <atom:link href="https://example.org/services/csv/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <atom:link href="https://danmar0801.github.io/testsite/services/csv/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
