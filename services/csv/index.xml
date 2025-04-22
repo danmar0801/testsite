@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CSV on My New Hugo Site</title>
-    <link>https://example.org/services/csv/</link>
+    <link>http://localhost:1313/services/csv/</link>
     <description>Recent content in CSV on My New Hugo Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://example.org/services/csv/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/services/csv/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
