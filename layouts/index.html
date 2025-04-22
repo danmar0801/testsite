@@ -1,11 +1,17 @@
 {{ define "main" }}
 
 <!-- Hero Section -->
-<section class="text-center py-5">
-  <h1 class="display-4 fw-bold">Empowering Innovation Through Technology</h1>
-  <p class="lead text-muted">At Viridian Techs, we offer innovative solutions to drive your business forward.</p>
-  <a href="#services" class="btn btn-success btn-lg mt-3">Explore Services</a>
-</section>
+<section class="hero-section">
+    <div class="container-fluid px-0">
+      <div class="hero-content text-center">
+        <h1 class="display-4 fw-bold mb-3">Empowering Innovation Through Technology</h1>
+        <p class="lead mb-4">At Viridian Techs, we offer innovative solutions to drive your business forward.</p>
+        <a href="#services" class="btn btn-success btn-lg">Explore Services</a>
+      </div>
+    </div>
+  </section>
+  
+  
 
 <!-- About Section -->
 <section id="about" class="py-5">
@@ -41,7 +47,7 @@
       </div>
   
       <div class="text-center">
-        <a href="contact.html" class="btn btn-success btn-lg">Let’s Talk About Your Vision</a>
+        <a href="{{ .Site.BaseURL }}contact" class="btn btn-success btn-lg">Let’s Talk About Your Vision</a>
       </div>
     </div>
   </section>
