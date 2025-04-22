@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>CQV on My New Hugo Site</title>
-    <link>https://example.org/services/cqv/</link>
-    <description>Recent content in CQV on My New Hugo Site</description>
+    <title>CQV on </title>
+    <link>https://danmar0801.github.io/testsite/services/cqv/</link>
+    <description>Recent content in CQV on </description>
     <generator>Hugo</generator>
-    <language>en-us</language>
-    <atom:link href="https://example.org/services/cqv/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <atom:link href="https://danmar0801.github.io/testsite/services/cqv/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

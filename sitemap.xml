@@ -2,21 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.org/</loc>
+    <loc>https://danmar0801.github.io/testsite/</loc>
     <lastmod>2025-04-16T18:29:14-07:00</lastmod>
   </url><url>
-    <loc>https://example.org/about/</loc>
+    <loc>https://danmar0801.github.io/testsite/about/</loc>
   </url><url>
-    <loc>https://example.org/categories/</loc>
+    <loc>https://danmar0801.github.io/testsite/categories/</loc>
   </url><url>
-    <loc>https://example.org/services/cqv/</loc>
+    <loc>https://danmar0801.github.io/testsite/services/cqv/</loc>
   </url><url>
-    <loc>https://example.org/services/csv/</loc>
+    <loc>https://danmar0801.github.io/testsite/services/csv/</loc>
   </url><url>
-    <loc>https://example.org/services/mes/</loc>
+    <loc>https://danmar0801.github.io/testsite/services/mes/</loc>
   </url><url>
-    <loc>https://example.org/services/scada/</loc>
+    <loc>https://danmar0801.github.io/testsite/services/scada/</loc>
   </url><url>
-    <loc>https://example.org/tags/</loc>
+    <loc>https://danmar0801.github.io/testsite/tags/</loc>
   </url>
 </urlset>
