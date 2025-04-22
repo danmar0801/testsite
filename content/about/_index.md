@@ -1,5 +1,4 @@
-+++
-date = '2025-04-16T18:29:06-07:00'
-draft = true
-title = 'About'
-+++
+---
+title: "About ViridianTechs"
+---
+<!-- any front‑matter or leave blank since your template provides the HTML -->

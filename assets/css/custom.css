@@ -271,6 +271,45 @@ section {
   }
 }
 
+/* --------- About Page Simplified --------- */
+
+/* Intro Section */
+#about-intro h1 {
+  color: var(--viridian-dark);
+  font-size: 4.5rem;
+  font-weight: 700;
+}
+#about-intro p {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Our Values */
+#our-values .section-title {
+  margin-bottom: 1.5rem;
+}
+#our-values h5 {
+  color: var(--viridian-dark);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+#our-values p {
+  color: var(--text-dark);
+  line-height: 1.5;
+}
+
+/* Call to Action */
+#about-cta p {
+  color: #333;
+}
+#about-cta .btn-success {
+  background-color: var(--viridian);
+  border: none;
+}
+#about-cta .btn-success:hover {
+  background-color: var(--viridian-dark);
+}
+
 
 
 
