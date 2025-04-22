@@ -176,7 +176,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: url('/images/capopy.png') center top/cover no-repeat;
+  background: url('../images/capopy.png') center top/cover no-repeat;
   transform: scaleY(-1);
   z-index: 0;
 }

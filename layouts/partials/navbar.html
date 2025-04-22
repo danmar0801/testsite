@@ -1,8 +1,9 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
   <div class="container">
-    <a class="navbar-brand fw-bold" href="{{ .Site.BaseURL }}">ViridianTechs</a>
+    <!-- Brand -->
+    <a class="navbar-brand fw-bold" href="{{ "/" | relURL }}">ViridianTechs</a>
 
-    <!-- Toggler: three bars that turn into an X -->
+    <!-- Toggler -->
     <button
       class="navbar-toggler collapsed"
       type="button"
@@ -19,39 +20,43 @@
       </span>
     </button>
 
+    <!-- Nav Links -->
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav ms-auto">
 
+        <!-- Home -->
         <li class="nav-item">
-          <a class="nav-link" href="{{ .Site.BaseURL }}">Home</a>
+          <a class="nav-link" href="{{ "/" | relURL }}">Home</a>
         </li>
 
+        <!-- About -->
         <li class="nav-item">
-          <a class="nav-link" href="{{ .Site.BaseURL }}about">About</a>
+          <a class="nav-link" href="{{ "about/" | relURL }}">About</a>
         </li>
 
+        <!-- Services Dropdown -->
         <li class="nav-item dropdown">
           <a
             class="nav-link dropdown-toggle"
-            href="#"
+            href="{{ "services/" | relURL }}"
             id="navbarDropdown"
             role="button"
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            Services
-            <span class="service-arrow">▾</span>
+            Services <span class="service-arrow">▾</span>
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="{{ "services/csv/"  | relURL }}">CSV</a></li>
-            <li><a class="dropdown-item" href="{{ "services/cqv/"  | relURL }}">CQV</a></li>
-            <li><a class="dropdown-item" href="{{ "services/mes/"  | relURL }}">MES</a></li>
+            <li><a class="dropdown-item" href="{{ "services/csv/"   | relURL }}">CSV</a></li>
+            <li><a class="dropdown-item" href="{{ "services/cqv/"   | relURL }}">CQV</a></li>
+            <li><a class="dropdown-item" href="{{ "services/mes/"   | relURL }}">MES</a></li>
             <li><a class="dropdown-item" href="{{ "services/scada/" | relURL }}">SCADA</a></li>
           </ul>
         </li>
 
+        <!-- Contact -->
         <li class="nav-item">
-          <a class="nav-link" href="{{ .Site.BaseURL }}contact">Contact</a>
+          <a class="nav-link" href="{{ "contact/" | relURL }}">Contact</a>
         </li>
 
       </ul>

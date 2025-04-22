@@ -68,7 +68,7 @@
       </p>
     </div>
     <div class="text-center">
-      <a href="{{ .Site.BaseURL }}contact" class="btn btn-success btn-lg">
+      <a href="{{ "contact/" | relURL }}" class="btn btn-success btn-lg">
         Let’s Talk About Your Vision
       </a>
     </div>
@@ -90,7 +90,7 @@
               commissioning, decommissioning, production suite setups, and
               rigorous method validations.
             </p>
-            <a href="/services/csv" class="btn btn-outline-success mt-auto">
+            <a href="{{ "services/csv/" | relURL }}" class="btn btn-outline-success mt-auto">
               Learn More →
             </a>
           </div>
@@ -105,7 +105,7 @@
               Delivering fully compliant, tailored validation solutions meeting
               FDA and EMA standards for all your computer systems.
             </p>
-            <a href="/services/cqv" class="btn btn-outline-success mt-auto">
+            <a href="{{ "services/cqv/" | relURL }}" class="btn btn-outline-success mt-auto">
               Learn More →
             </a>
           </div>
@@ -120,7 +120,7 @@
               Streamlined, automated solutions to effectively manage inventory,
               product orders, and production protocols.
             </p>
-            <a href="/services/mes" class="btn btn-outline-success mt-auto">
+            <a href="{{ "services/mes/" | relURL }}" class="btn btn-outline-success mt-auto">
               Learn More →
             </a>
           </div>
@@ -135,7 +135,7 @@
               Robust, centralized monitoring solutions designed to enhance
               control over your industrial operations and digitalization efforts.
             </p>
-            <a href="/services/scada" class="btn btn-outline-success mt-auto">
+            <a href="{{ "services/scada/" | relURL }}" class="btn btn-outline-success mt-auto">
               Learn More →
             </a>
           </div>
@@ -242,6 +242,5 @@
     </div>
   </div>
 </section>
-
 
 {{ end }}
