@@ -191,6 +191,8 @@
   color: #fff;
   text-shadow: 0 3px 12px rgba(0, 0, 0, 0.8);
 }
+
+
 .hero-section .lead {
   font-weight: 450;
   font-size: 1.25rem;
@@ -309,6 +311,69 @@ section {
 #about-cta .btn-success:hover {
   background-color: var(--viridian-dark);
 }
+
+/* ######################################## */
+/* ------------ CSV Detail Page Styles ------------ */
+/* CSV-specific hero — no longer touches the homepage hero */
+.csv-hero-section {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  top: -2.8rem;
+  margin-left: -50vw;
+  padding: 11rem 0;
+  background: url('../images/csv-hero.png') center/cover no-repeat;
+  color: #fff;
+}
+
+.csv-hero-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.056);
+}
+
+.csv-hero-section .container {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+}
+.csv-hero-section p {
+  font-size: 1.55rem;
+  margin-bottom: 1.5rem;
+}
+
+
+/* Unified white background & padding */
+.service-detail-section {
+  background-color: #fff;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+/* Section headings & text */
+
+.service-detail-section p,
+.service-detail-section ul {
+  color: #444;
+  line-height: 1.6;
+  font-size: 1.25rem;
+}
+.service-detail-section ul {
+  margin-left: 1.5rem;
+  list-style-type: disc;
+}
+
+/* For larger screens, a bit more breathing room—but less than before */
+@media (min-width: 768px) {
+  .service-detail-section {
+    /* previously 4rem or 6rem; now 3.5rem */
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
 
 
 

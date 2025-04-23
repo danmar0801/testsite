@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SCADA on </title>
-    <link>https://danmar0801.github.io/testsite/services/scada/</link>
+    <link>http://localhost:1313/testsite/services/scada/</link>
     <description>Recent content in SCADA on </description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="https://danmar0801.github.io/testsite/services/scada/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/testsite/services/scada/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
