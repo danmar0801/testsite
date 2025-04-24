@@ -1,6 +1,178 @@
-{{ define "main" }}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="generator" content="Hugo 0.146.1"><script src="/testsite/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=testsite/livereload" data-no-instant defer></script>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Home</title>
 
-<!-- Hero Section -->
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+
+
+<link rel="stylesheet" href="http://localhost:1313/testsite/css/custom.css">
+
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+  <div class="container">
+    
+    <a class="navbar-brand fw-bold" href="./">ViridianTechs</a>
+
+    
+    <button
+      class="navbar-toggler collapsed"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="toggler-icon">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </span>
+    </button>
+
+    
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto">
+
+        
+        <li class="nav-item">
+          <a class="nav-link" href="./">Home</a>
+        </li>
+
+        
+        <li class="nav-item">
+          <a class="nav-link" href="./about/">About</a>
+        </li>
+
+        
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="./services/"
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Services <span class="service-arrow">▾</span>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="./services/csv/">CSV</a></li>
+            <li><a class="dropdown-item" href="./services/cqv/">CQV</a></li>
+            <li><a class="dropdown-item" href="./services/mes/">MES</a></li>
+            <li><a class="dropdown-item" href="./services/scada/">SCADA</a></li>
+          </ul>
+        </li>
+
+        
+        <li class="nav-item">
+          <a class="nav-link" href="./contact/">Contact</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<style>
+ 
+.navbar-nav .dropdown-toggle::after {
+  display: none !important;
+}
+
+ 
+.nav-link {
+  position: relative;
+  transition: color .3s ease;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 0; height: 2px;
+  background: var(--viridian);
+  transition: width .3s ease;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+
+ 
+@media (min-width: 992px) {
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+}
+
+ 
+.navbar-nav .dropdown-menu {
+  border: 2px solid var(--viridian);
+  border-radius: 0.5rem;
+  background-color: #fff;
+  padding: 0.5rem 0;   
+  box-shadow: none;    
+}
+
+ 
+@media (min-width: 992px) {
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+}
+
+ 
+.toggler-icon {
+  display: inline-block;
+  position: relative;
+  width: 24px; height: 18px;
+}
+.toggler-icon .bar {
+  position: absolute;
+  width: 100%; height: 2px;
+  background: var(--viridian-dark);
+  left: 0;
+  transition: transform .3s ease, opacity .3s ease, background .3s ease;
+}
+.toggler-icon .bar:nth-child(1) { top: 0; }
+.toggler-icon .bar:nth-child(2) { top: 50%; transform: translateY(-50%); }
+.toggler-icon .bar:nth-child(3) { bottom: 0; }
+
+.navbar-toggler:not(.collapsed) .toggler-icon .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px,5px);
+  background: red;
+}
+.navbar-toggler:not(.collapsed) .toggler-icon .bar:nth-child(2) {
+  opacity: 0;
+}
+.navbar-toggler:not(.collapsed) .toggler-icon .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(5px,-5px);
+  background: red;
+}
+
+ 
+@media (max-width: 991.98px) {
+  .dropdown-menu {
+    position: static !important;
+    box-shadow: none; border: none;
+  }
+}
+</style>
+
+
+  <main class="container my-5">
+    
+
+
 <section class="hero-section">
   <div class="container-fluid px-0">
     <div class="hero-content text-center">
@@ -17,7 +189,7 @@
   </div>
 </section>
 
-<!-- About Section -->
+
 <section id="about" class="py-5">
   <div class="container">
     <h2 class="section-title">About Viridian Techs</h2>
@@ -68,19 +240,19 @@
       </p>
     </div>
     <div class="text-center">
-      <a href="{{ "contact/" | relURL }}" class="btn btn-success btn-lg">
+      <a href="./contact/" class="btn btn-success btn-lg">
         Let’s Talk About Your Vision
       </a>
     </div>
   </div>
 </section>
 
-<!-- Services Section -->
+
 <section id="services" class="py-5">
   <div class="container">
     <h2 class="section-title">Our Specialized Services</h2>
     <div class="row row-cols-1 row-cols-md-4 g-4">
-      {{/* CSV */}}
+      
       <div class="col d-flex align-items-stretch">
         <div class="card text-center shadow-sm service-card">
           <div class="card-header">CSV</div>
@@ -90,13 +262,13 @@
               commissioning, decommissioning, production suite setups, and
               rigorous method validations.
             </p>
-            <a href="{{ "services/csv/" | relURL }}" class="btn btn-outline-success mt-auto">
+            <a href="./services/csv/" class="btn btn-outline-success mt-auto">
               Learn More →
             </a>
           </div>
         </div>
       </div>
-      {{/* CQV */}}
+      
       <div class="col d-flex align-items-stretch">
         <div class="card text-center shadow-sm service-card">
           <div class="card-header">CQV</div>
@@ -105,13 +277,13 @@
               Delivering fully compliant, tailored validation solutions meeting
               FDA and EMA standards for all your computer systems.
             </p>
-            <a href="{{ "services/cqv/" | relURL }}" class="btn btn-outline-success mt-auto">
+            <a href="./services/cqv/" class="btn btn-outline-success mt-auto">
               Learn More →
             </a>
           </div>
         </div>
       </div>
-      {{/* MES */}}
+      
       <div class="col d-flex align-items-stretch">
         <div class="card text-center shadow-sm service-card">
           <div class="card-header">MES</div>
@@ -120,13 +292,13 @@
               Streamlined, automated solutions to effectively manage inventory,
               product orders, and production protocols.
             </p>
-            <a href="{{ "services/mes/" | relURL }}" class="btn btn-outline-success mt-auto">
+            <a href="./services/mes/" class="btn btn-outline-success mt-auto">
               Learn More →
             </a>
           </div>
         </div>
       </div>
-      {{/* SCADA */}}
+      
       <div class="col d-flex align-items-stretch">
         <div class="card text-center shadow-sm service-card">
           <div class="card-header">SCADA</div>
@@ -135,7 +307,7 @@
               Robust, centralized monitoring solutions designed to enhance
               control over your industrial operations and digitalization efforts.
             </p>
-            <a href="{{ "services/scada/" | relURL }}" class="btn btn-outline-success mt-auto">
+            <a href="./services/scada/" class="btn btn-outline-success mt-auto">
               Learn More →
             </a>
           </div>
@@ -145,13 +317,13 @@
   </div>
 </section>
 
-<!-- Why Choose Us Section -->
+
 <section id="why-choose-us" class="py-5 bg-white">
   <div class="container">
     <h2 class="section-title">Why Choose Viridian Techs?</h2>
     <div class="row row-cols-1 row-cols-md-3 g-4">
 
-      <!-- Feature 1 -->
+      
       <div class="col">
         <div class="feature-item d-flex align-items-start">
           <div class="feature-icon">1</div>
@@ -162,7 +334,7 @@
         </div>
       </div>
 
-      <!-- Feature 2 -->
+      
       <div class="col">
         <div class="feature-item d-flex align-items-start">
           <div class="feature-icon">2</div>
@@ -173,7 +345,7 @@
         </div>
       </div>
 
-      <!-- Feature 3 -->
+      
       <div class="col">
         <div class="feature-item d-flex align-items-start">
           <div class="feature-icon">3</div>
@@ -188,7 +360,7 @@
   </div>
 </section>
 
-<!-- Testimonials Section -->
+
 <section id="testimonials" class="py-5">
   <div class="container">
     <h2 class="section-title">Client Testimonials</h2>
@@ -202,7 +374,7 @@
                 "Their expertise helped us double our productivity. Highly recommend Viridian Techs!"
               </p>
               <footer class="blockquote-footer">
-                Jane, <cite>CTO</cite>
+                Jane Doe, <cite>CEO of TechCorp</cite>
               </footer>
             </blockquote>
           </div>
@@ -217,7 +389,7 @@
                 "A team that's always there to support us. Viridian Techs is truly reliable."
               </p>
               <footer class="blockquote-footer">
-                Jedi, <cite>Director of Automation</cite>
+                Jedi Langdon, <cite>CTO at Automation</cite>
               </footer>
             </blockquote>
           </div>
@@ -232,7 +404,7 @@
                 "Innovative solutions and excellent communication. We trust Viridian Techs completely."
               </p>
               <footer class="blockquote-footer">
-                Linda, <cite>Senior Manufacturing Engineer</cite>
+                Linda Park, <cite>Founder of CloudMasters</cite>
               </footer>
             </blockquote>
           </div>
@@ -243,4 +415,100 @@
   </div>
 </section>
 
-{{ end }}
+
+  </main>
+
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="section-title">Get in Touch</h2>
+      <form
+        id="contact-form"
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        class="mx-auto"
+        style="max-width:600px;"
+      >
+        
+        <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
+        
+        <input type="hidden" name="subject" value="New message from Viridian Techs site" />
+  
+        <div class="mb-3">
+          <label for="name" class="form-label">Name *</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="form-control"
+            placeholder="Your full name"
+            required
+          />
+        </div>
+  
+        <div class="mb-3">
+          <label for="email" class="form-label">Email *</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-control"
+            placeholder="you@example.com"
+            required
+          />
+        </div>
+  
+        <div class="mb-3">
+          <label for="phone" class="form-label">Phone</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            class="form-control"
+            placeholder="(123) 456‑7890"
+          />
+        </div>
+  
+        <div class="mb-4">
+          <label for="message" class="form-label">Message *</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            class="form-control"
+            placeholder="How can we help you?"
+            required
+          ></textarea>
+        </div>
+  
+        <div class="text-center">
+          <button type="submit" class="btn btn-success btn-lg">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  
+
+  
+  <footer class="bg-dark text-white text-center py-4 mt-5">
+    <p class="mb-0">&copy; 2025 ViridianTechs. All rights reserved.</p>
+  </footer>
+  
+  
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const dropdown = document.querySelector('.nav-item.dropdown');
+      const toggle = dropdown?.querySelector('[data-bs-toggle="dropdown"]');
+  
+      if (dropdown && toggle) {
+        toggle.addEventListener('click', function (e) {
+          if (window.innerWidth >= 768) {
+            e.preventDefault();
+            e.stopImmediatePropagation();
+          }
+        });
+      }
+    });
+</script>
+  
+</body>
+</html>

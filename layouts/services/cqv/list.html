@@ -1,24 +1,156 @@
 {{ define "main" }}
 
-<section class="py-5">
-  <div class="container">
-    <h1 class="section-title">Commissioning, Qualification &amp; Validation (CQV)</h1>
+<!-- CQV Hero Section -->
+<section class="CQV-hero-section text-white">
+  <div class="container text-center">
+    <h1 class="display-4 fw-bold">
+      Commissioning, Qualification &amp; Validation (CQV)
+    </h1>
     <p class="lead">
-      Achieve full GxP compliance with a seamless CQV approach—IQ/OQ/PQ services, SOP development, and audit‑ready deliverables.
+      Turnkey CQV services that ensure your systems are installed, operating, and performing exactly as required—every time.
     </p>
-    <ul class="list-unstyled">
-      <li>Installation Qualification (IQ)</li>
-      <li>Operational Qualification (OQ)</li>
-      <li>Performance Qualification (PQ)</li>
-      <li>Standard Operating Procedures &amp; Training</li>
+  </div>
+</section>
+
+<!-- Why Us -->
+<section id="cqv-why-us" class="py-5 service-detail-section">
+  <div class="container">
+    <h2 class="section-title">Why Choose ViridianTechs for CQV?</h2>
+    <p>
+      With over a decade of life-science and manufacturing experience, ViridianTechs delivers
+      end-to-end CQV projects on time and under budget. We partner closely with your team to:
+    </p>
+    <ul>
+      <li>Design risk-based protocols tailored to your critical systems</li>
+      <li>Execute parallel IQ/OQ to accelerate time-to-production</li>
+      <li>Validate performance under real-world conditions (PQ)</li>
+      <li>Provide audit-ready documentation that inspectors love</li>
+      <li>Offer change-control and re-validation support for lifecycle compliance</li>
     </ul>
   </div>
 </section>
 
-<section class="py-5 text-center">
-  <a href="{{ "contact/" | relURL }}" class="btn btn-success btn-lg">
-    Learn More About CQV
-  </a>
+<!-- CQV Accordions (stacked & centered) -->
+<section id="cqv-accordions" class="py-5 service-detail-section">
+  <div class="container">
+    <div class="row justify-content-center">
+
+      <!-- Benefits of CQV -->
+      <div class="col-12 col-md-8 mb-4">
+        <div class="accordion" id="cqvBenefits">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="benefitsHeading">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#benefitsCollapse"
+                aria-expanded="false"
+                aria-controls="benefitsCollapse"
+              >
+                Benefits of CQV
+              </button>
+            </h2>
+            <div
+              id="benefitsCollapse"
+              class="accordion-collapse collapse"
+              aria-labelledby="benefitsHeading"
+              data-bs-parent="#cqvBenefits"
+            >
+              <div class="accordion-body">
+                <ul>
+                  <li>Minimize regulatory risk with targeted, risk-based testing</li>
+                  <li>Slash startup time via concurrent execution of IQ and OQ</li>
+                  <li>Guarantee consistent, repeatable system performance (PQ)</li>
+                  <li>Streamline audits with clear, traceable documentation</li>
+                  <li>Maintain uptime with integrated change-control processes</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- How We Achieve Your CQV Goals -->
+      <div class="col-12 col-md-8 mb-4">
+        <div class="accordion" id="cqvGoals">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="goalsHeading">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#goalsCollapse"
+                aria-expanded="false"
+                aria-controls="goalsCollapse"
+              >
+                How We Achieve Your CQV Goals
+              </button>
+            </h2>
+            <div
+              id="goalsCollapse"
+              class="accordion-collapse collapse"
+              aria-labelledby="goalsHeading"
+              data-bs-parent="#cqvGoals"
+            >
+              <div class="accordion-body">
+                <ul>
+                  <li>URS &amp; Risk Assessment to focus on critical system elements</li>
+                  <li>Installation Qualification (IQ) &amp; vendor oversight</li>
+                  <li>Operational Qualification (OQ) &amp; critical parameter testing</li>
+                  <li>Performance Qualification (PQ) under loaded conditions</li>
+                  <li>Comprehensive training &amp; documented change control</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Our CQV Methodology -->
+<section id="cqv-method" class="py-5 service-detail-section">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">Our CQV Methodology</h2>
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+
+      <div class="col">
+        <div class="method-item text-center h-100 p-4">
+          <div class="method-number">1</div>
+          <h5 class="mt-3">PLAN &amp; RISK</h5>
+          <p>Define scope, perform FMEA, and draft risk-based test strategies.</p>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="method-item text-center h-100 p-4">
+          <div class="method-number">2</div>
+          <h5 class="mt-3">INSTALL QUALIFICATION (IQ)</h5>
+          <p>Verify installation, calibration, and network configuration.</p>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="method-item text-center h-100 p-4">
+          <div class="method-number">3</div>
+          <h5 class="mt-3">OPERATIONAL QUALIFICATION (OQ)</h5>
+          <p>Test operational functionality, alarms, and interlocks.</p>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="method-item text-center h-100 p-4">
+          <div class="method-number">4</div>
+          <h5 class="mt-3">PERFORMANCE QUALIFICATION (PQ)</h5>
+          <p>Demonstrate performance under real process conditions.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </section>
 
 {{ end }}

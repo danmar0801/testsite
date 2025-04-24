@@ -1,24 +1,130 @@
 {{ define "main" }}
 
-<section class="py-5">
-  <div class="container">
-    <h1 class="section-title">SCADA &amp; HMI Solutions</h1>
+<!-- SCADA Hero Section -->
+<section class="scada-hero-section text-white">
+  <div class="container text-center">
+    <h1 class="display-4 fw-bold">SCADA & HMI Solutions</h1>
     <p class="lead">
-      Gain full visibility and control with GxP‑ready SCADA/HMI systems—real‑time monitoring, alarming, and data analytics.
+      Real-time supervisory control and data acquisition tailored to optimize your industrial operations.
     </p>
-    <ul class="list-unstyled">
-      <li>Centralized Equipment Monitoring</li>
-      <li>Custom HMI Dashboard Design</li>
-      <li>Alarm Management &amp; Notifications</li>
-      <li>Historical Data Trending &amp; Reporting</li>
+  </div>
+</section>
+
+<!-- Why Us -->
+<section id="scada-why-us" class="py-5 service-detail-section">
+  <div class="container">
+    <h2 class="section-title">Why Choose ViridianTechs for SCADA?</h2>
+    <p>
+      At ViridianTechs, we’ve implemented SCADA &amp; HMI systems in hundreds of facilities worldwide. Our turnkey approach ensures you get:
+    </p>
+    <ul>
+      <li><strong>24/7 Visibility:</strong> Centralized dashboards that let you monitor equipment health and process metrics in real time.</li>
+      <li><strong>Rapid Alarm Response:</strong> Custom alarm logic and notification workflows to catch issues before they escalate.</li>
+      <li><strong>GxP Compliance:</strong> Audit-ready logs, secure data storage, and validation documentation to satisfy FDA &amp; EMA.</li>
+      <li><strong>Seamless Integration:</strong> Bi-directional data exchange with PLCs, MES, ERP, and historian systems.</li>
+      <li><strong>Scalable Architecture:</strong> From single-site deployments to enterprise-wide multi-node installations.</li>
     </ul>
   </div>
 </section>
 
-<section class="py-5 text-center">
-  <a href="{{ "contact/" | relURL }}" class="btn btn-success btn-lg">
-    Deploy SCADA Today
-  </a>
+<!-- Our SCADA Capabilities -->
+<section id="scada-features" class="py-5 service-detail-section">
+  <div class="container">
+    <h2 class="section-title text-center mb-4">Our SCADA &amp; HMI Capabilities</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="feature-item d-flex align-items-start">
+          <div class="feature-icon">🏭</div>
+          <div class="feature-copy ms-3">
+            <h5>Equipment Monitoring</h5>
+            <p>Real-time status, performance metrics, and predictive analytics for every asset.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="feature-item d-flex align-items-start">
+          <div class="feature-icon">📊</div>
+          <div class="feature-copy ms-3">
+            <h5>Custom HMI Dashboards</h5>
+            <p>Intuitive, role-based interfaces that put critical data at your operators’ fingertips.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="feature-item d-flex align-items-start">
+          <div class="feature-icon">⚠️</div>
+          <div class="feature-copy ms-3">
+            <h5>Alarm &amp; Event Management</h5>
+            <p>Advanced filtering, prioritization, and notification to streamline incident response.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="feature-item d-flex align-items-start">
+          <div class="feature-icon">📈</div>
+          <div class="feature-copy ms-3">
+            <h5>Historical Trending</h5>
+            <p>Time-series data capture and reporting to identify patterns and drive continuous improvement.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="feature-item d-flex align-items-start">
+          <div class="feature-icon">🔒</div>
+          <div class="feature-copy ms-3">
+            <h5>Secure Data Logging</h5>
+            <p>Encrypted, timestamped audit trails that meet regulatory requirements.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="feature-item d-flex align-items-start">
+          <div class="feature-icon">🌐</div>
+          <div class="feature-copy ms-3">
+            <h5>Enterprise Integration</h5>
+            <p>Connect SCADA data streams to MES, ERP, CMMS, and cloud analytics platforms.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Our SCADA Implementation Process -->
+<section id="scada-method" class="py-5 service-detail-section">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">Our SCADA Implementation Process</h2>
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+      <div class="col">
+        <div class="method-item text-center h-100 p-4">
+          <div class="method-number">1</div>
+          <h5 class="mt-3">Discovery &amp; Design</h5>
+          <p>Map your control architecture, define KPIs, and draft system requirements.</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="method-item text-center h-100 p-4">
+          <div class="method-number">2</div>
+          <h5 class="mt-3">Configuration &amp; Development</h5>
+          <p>Build SCADA screens, configure alarms, and develop historian interfaces.</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="method-item text-center h-100 p-4">
+          <div class="method-number">3</div>
+          <h5 class="mt-3">Commissioning &amp; Validation</h5>
+          <p>Perform IQ/OQ/PQ to prove the system meets all functional and regulatory criteria.</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="method-item text-center h-100 p-4">
+          <div class="method-number">4</div>
+          <h5 class="mt-3">Training &amp; Support</h5>
+          <p>Educate your operators and provide 24/7 support and change-control services.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 {{ end }}
