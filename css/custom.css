@@ -374,7 +374,213 @@ section {
   }
 }
 
+/* Hero */
+.mes-hero-section {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  top: -2.8rem;
+  margin-left: -50vw;
+  padding: 10rem 0;
+  background: url('../images/mes-hero.png') center/cover no-repeat;
+}
+.mes-hero-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+}
+.mes-hero-section .container {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+}
 
+.CQV-hero-section {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  top: -2.8rem;
+  margin-left: -50vw;
+  padding: 10rem 0;
+  background: url('../images/cqv-hero.png') center/cover no-repeat;
+}
+.CQV-hero-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+}
+.CQV-hero-section .container {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+}
+
+.scada-hero-section {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  top: -2.8rem;
+  margin-left: -50vw;
+  padding: 10rem 0;
+  background: url('../images/scada-hero.png') center/cover no-repeat;
+}
+.scada-hero-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+}
+.scada-hero-section .container {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+}
+
+/* About Hero */
+.about-hero-section {
+  position: relative;
+  width: 100vw; left: 50%; margin-left: -50vw;
+  top: -2.9rem;
+  padding: 10rem 0;
+  background: url('../images/about-hero.png') center/cover no-repeat;
+}
+.about-hero-section::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: rgba(0,0,0,0.1);
+}
+.about-hero-section .container {
+  position: relative; z-index:1;
+  color: #fff; text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+}
+
+/* Core Values icons override (if needed) */
+.feature-item .feature-icon {
+  background: none;       /* no background box */
+  width: auto;            /* don’t force a fixed square */
+  height: auto;
+  border-radius: 0;       /* remove rounding */
+  font-size: 3rem;        /* make the emoji bigger */
+  line-height: 1;         /* avoid extra vertical space */
+  margin-right: 1rem;     /* keep a little gap to the text */
+  display: inline-block;  /* honor width/height:auto + margin */
+}
+
+/* About page list styling */
+#about-why-us ul,
+#scada-why-us ul,
+#cqv-why-us ul {
+  margin-left: 1.5rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Tighten spacing under titles on about page */
+#about-what-we-do .section-title,
+#about-why-us .section-title {
+  margin-bottom: 1.5rem;
+}
+
+/* ---------- Our Impact Styling ---------- */
+.impact-item {
+  background: #fff;
+  border-radius: 0.75rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.impact-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+}
+
+.impact-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--viridian-dark);
+}
+
+.impact-label {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+
+/* ---- Accordion Styles ---- */
+/* Accordion button styling */
+.accordion-button {
+  background-color: var(--viridian);
+  color: #fff;
+  transition: background-color .3s;
+}
+.accordion-button:not(.collapsed) {
+  background-color: var(--viridian-dark);
+  color: #fff;
+}
+/* Make all accordion chevrons white */
+.accordion-button::after {
+  /* invert the default dark arrow to white */
+  filter: brightness(0) invert(1);
+}
+
+
+/* Accordion body lists */
+.accordion-body ul {
+  margin: 0;
+  padding-left: 1.5rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* ---- Methodology Cards ---- */
+.method-item {
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,0.06);
+  border-radius: 0.75rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.method-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+}
+
+/* Number badge */
+.method-number {
+  width: 3rem;
+  height: 3rem;
+  margin: 0 auto;
+  background-color: var(--viridian);
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 700;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Heading & text */
+.method-item h5 {
+  color: var(--viridian-dark);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+.method-item p {
+  margin-top: 0.5rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Tighten up spacing under the section title */
+#cqv-method .section-title {
+  margin-bottom: 2rem;
+}
 
 
 
