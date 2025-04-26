@@ -1,4 +1,4 @@
-baseURL = "https://danmar0801.github.io/testsite/"
+baseURL = "http://www.viridiantechs.com/"
 relativeURLs = true
 canonifyURLs  = true
 publishDir    = "public"
