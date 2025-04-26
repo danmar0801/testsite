@@ -582,5 +582,32 @@ section {
   margin-bottom: 2rem;
 }
 
+/* Success Page */
+.success-section {
+  padding: 6rem 0;
+  background-color: #f9f9f9;
+}
+
+.success-title {
+  color: var(--viridian-dark);
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.success-section .lead {
+  color: #555;
+  font-size: 1.25rem;
+}
+
+.success-section .btn-success {
+  background-color: var(--viridian);
+  border: none;
+  padding: 0.75rem 2rem;
+}
+.success-section .btn-success:hover {
+  background-color: var(--viridian-dark);
+}
+
 
 

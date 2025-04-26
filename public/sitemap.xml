@@ -2,21 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://danmar0801.github.io/testsite/</loc>
+    <loc>http://localhost:1313/testsite/contact/</loc>
     <lastmod>2025-04-16T18:29:14-07:00</lastmod>
   </url><url>
-    <loc>https://danmar0801.github.io/testsite/about/</loc>
+    <loc>http://localhost:1313/testsite/</loc>
+    <lastmod>2025-04-16T18:29:14-07:00</lastmod>
   </url><url>
-    <loc>https://danmar0801.github.io/testsite/categories/</loc>
+    <loc>http://localhost:1313/testsite/services/</loc>
+    <lastmod>2025-04-16T18:29:10-07:00</lastmod>
   </url><url>
-    <loc>https://danmar0801.github.io/testsite/services/cqv/</loc>
+    <loc>http://localhost:1313/testsite/about/</loc>
   </url><url>
-    <loc>https://danmar0801.github.io/testsite/services/csv/</loc>
+    <loc>http://localhost:1313/testsite/categories/</loc>
   </url><url>
-    <loc>https://danmar0801.github.io/testsite/services/mes/</loc>
+    <loc>http://localhost:1313/testsite/services/cqv/</loc>
   </url><url>
-    <loc>https://danmar0801.github.io/testsite/services/scada/</loc>
+    <loc>http://localhost:1313/testsite/services/csv/</loc>
   </url><url>
-    <loc>https://danmar0801.github.io/testsite/tags/</loc>
+    <loc>http://localhost:1313/testsite/services/mes/</loc>
+  </url><url>
+    <loc>http://localhost:1313/testsite/services/scada/</loc>
+  </url><url>
+    <loc>http://localhost:1313/testsite/success/</loc>
+  </url><url>
+    <loc>http://localhost:1313/testsite/tags/</loc>
   </url>
 </urlset>
