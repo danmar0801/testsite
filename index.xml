@@ -2,11 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on </title>
-    <link>https://danmar0801.github.io/testsite/</link>
+    <link>http://localhost:1313/testsite/</link>
     <description>Recent content in Home on </description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate></lastBuildDate>
-    <atom:link href="https://danmar0801.github.io/testsite/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/testsite/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Success</title>
+      <link>http://localhost:1313/testsite/success/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/testsite/success/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
