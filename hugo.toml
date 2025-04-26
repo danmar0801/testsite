@@ -1,4 +1,4 @@
-baseURL = "https://www.viridiantechs.com/"
+baseURL = "https://viridiantechs.com/"
 relativeURLs = true
 canonifyURLs  = true
 publishDir    = "public"
